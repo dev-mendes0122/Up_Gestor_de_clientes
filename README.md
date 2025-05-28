@@ -9,9 +9,9 @@ Este repositório contém a documentação completa do projeto desenvolvido pelo
 ## 🧑‍💼 Dados do Cliente
 
 - **Título do Projeto:** Gestão de Clientes 
-- **Cliente:**   
+- **Cliente:** Marcus Vinicius de Lira Rocha
 - **CPF:**   
-- **Contato:** 
+- **Contato:** (19) 98835-6289
 
 ---
 
