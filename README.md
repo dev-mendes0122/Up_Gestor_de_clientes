@@ -2,7 +2,7 @@
 
 ## 📘 Documentação do Sistema
 
-Este repositório contém a documentação completa do projeto desenvolvido pelos alunos do Centro Universitário Unimetrocamp como parte da disciplina **Desenvolvimento rápido de aplicações em Python**, sob orientação do professor **Mauro Rodrigues**. O projeto adota a metodologia **RAD**
+Este repositório contém a documentação completa do projeto desenvolvido pelos alunos do Centro Universitário Unimetrocamp como parte da disciplina **Desenvolvimento rápido de aplicações em Python**, sob orientação do professor **Mauro Rodrigues**. O projeto adota a metodologia **RAD** (Rapid Application Development).
 
 ---
 
