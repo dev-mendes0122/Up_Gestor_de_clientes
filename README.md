@@ -2,7 +2,7 @@
 
 ## 📘 Documentação do Sistema
 
-Este repositório contém a documentação completa do projeto desenvolvido pelos alunos do Centro Universitário Unimetrocamp como parte da disciplina **Programação Orientada a Objetos em Java**, sob orientação do professor **Kesede Rodrigues Julio**. O projeto adota a metodologia ágil **Scrum** e visa resolver problemas reais enfrentados por clientes parceiros.
+Este repositório contém a documentação completa do projeto desenvolvido pelos alunos do Centro Universitário Unimetrocamp como parte da disciplina **Desenvolvimento rápido de aplicações em Python**, sob orientação do professor **Mauro Rodrigues**. O projeto adota a metodologia **RAD**
 
 ---
 
@@ -29,68 +29,100 @@ Este repositório contém a documentação completa do projeto desenvolvido pelo
 
 ---
 
-## 🧭 Introdução
+🧭 Introdução
+A comunicação rápida e eficiente com os clientes é um dos pilares fundamentais para empresas prestadoras de serviço, como provedores de IPTV. Atualmente, muitos desses negócios dependem de diversas plataformas para gerenciar informações dos clientes, o que torna o atendimento descentralizado, manual e propenso a erros.
 
-A comunicação eficiente entre empresas e seus clientes é um fator essencial para o sucesso de qualquer negócio, especialmente no setor de serviços, como a IPTV (Internet Protocol Television). No contexto atual, a automação de processos de comunicação tem se mostrado uma estratégia crucial para otimizar o atendimento, reduzir custos e melhorar a experiência do usuário. Este trabalho propõe uma solução inovadora que integra o banco de dados de um provedor de serviços IPTV com o WhatsApp, visando automatizar a comunicação entre clientes e fornecedores, oferecendo uma experiência mais ágil, eficiente e personalizada. 
+Pensando nisso, este projeto propõe o desenvolvimento de um sistema unificado que centraliza os dados de sete sites utilizados por um cliente em uma única aplicação. Com o uso de tecnologias como Python, SQLite3, Selenium e WebDriver para coleta de dados (web scraping), além de uma interface gráfica em PyQt, será possível automatizar o fluxo de informações. O sistema também contará com integração à API do WhatsApp para envio automático de mensagens, otimizando o suporte e relacionamento com os clientes de forma personalizada e eficiente.
 
-A crescente demanda por soluções que conectem plataformas digitais a canais de comunicação populares, como o WhatsApp, torna-se uma necessidade estratégica para empresas que desejam melhorar o relacionamento com seus clientes, automatizar atendimentos e agilizar processos. A integração de sistemas, por sua vez, é um desafio que exige um planejamento técnico apurado e uma análise profunda dos processos de negócios envolvidos. 
+🎯 Objetivo
+Problema
+O cliente utiliza plataformas diferentes para acessar informações dos seus usuários, como status de pagamento, agendamentos e suporte. Além disso, todo o atendimento via WhatsApp é feito de forma manual, o que gera atrasos, aumenta o risco de erro humano e compromete a experiência do cliente.
 
-## 🎯 Objetivo
+Solução Proposta
+Desenvolver um sistema desktop que:
 
-Problema: 
-O cliente enfrenta dificuldades em automatizar a comunicação com seus clientes via WhatsApp. O atendimento é feito manualmente, resultando em atrasos, erros e um processo ineficiente. As informações, como status de pagamento e agendamentos, são inseridas manualmente, o que aumenta os custos e prejudica a experiência do cliente. 
+Reúna os dados dos sites distintos por meio de web scraping automatizado.
 
-Solução Proposta: 
-Implementar um sistema computadorizado que integre o banco de dados da empresa com a WhatsApp Business API. A automação permitirá o envio de mensagens personalizadas, como lembretes de pagamento e atualizações de serviço, diretamente pelo WhatsApp, com base nas informações do cliente. Isso reduzirá o tempo de resposta, melhorará a personalização do atendimento e diminuirá a carga de trabalho manual, resultando em maior eficiência e satisfação do cliente. 
+Armazene e organize essas informações localmente com SQLite3.
 
----
+Utilize uma interface amigável com PyQt para visualização e controle das operações.
 
-## 🧩 Escopo
+Faça uso da API do WhatsApp para responder automaticamente os clientes com mensagens personalizadas, baseadas nas informações extraídas.
 
-### Requistos Principais:
+Essa solução permitirá maior agilidade, redução de custos operacionais e melhoria na experiência do cliente.
 
-- Integração com WhatsApp Business API: Conectar o banco de dados da empresa ao WhatsApp para enviar mensagens automáticas personalizadas. 
-- Automação de Mensagens: Enviar automaticamente mensagens como lembretes de pagamento e atualizações de serviço.
-- Personalização das Mensagens: Adaptar as mensagens conforme o histórico e dados de cada cliente.
-- Notificações e lembretes sobre prazos e metas financeiras
+🧩 Escopo
+Funcionalidades Principais:
+Integração com plataformas web: Coleta automatizada de dados relevantes dos clientes.
 
-### Limites de Implementação:
+Centralização de dados em banco local: Utilização do SQLite3 para armazenar as informações extraídas.
 
-- Interações Complexas: Atendimento personalizado e suporte técnico avançado não serão automatizados. 
-- Integração com Outras Plataformas: O sistema será focado apenas no WhatsApp, sem integração com outras plataformas de comunicação. 
-- Escalabilidade Inicial: O sistema não será projetado para suportar grandes volumes de dados ou interações simultâneas inicialmente. 
+Interface gráfica (GUI): Gerenciamento das funcionalidades por meio de uma aplicação em PyQt.
 
-### O que não será Implementado::
+Integração com WhatsApp API: Envio automático de mensagens personalizadas com base em dados do cliente (pagamentos, agendamentos, notificações).
 
-- Funcionalidades de e-commerce e processamento de pagamentos via WhatsApp.
-- Suporte a canais de comunicação além do WhatsApp. 
+Autenticação via JSON: Controle de acesso ao sistema e dados de configuração armazenados de forma segura.
 
----
+Limitações:
+O sistema não será integrado a outros canais de atendimento além do WhatsApp.
 
-## 📋 Backlog do Produto
+Atendimento complexo e técnico continuará sendo realizado manualmente.
 
-1. **Texto**  
-   dscrição
+A primeira versão não terá foco em grande escalabilidade ou múltiplos usuários simultâneos.
 
-2. **texto**  
-   descrição
+Não Incluso:
+Processamento de pagamentos diretamente pelo sistema.
 
----
+Funcionalidades de e-commerce.
 
-## ⚙️ Tecnologias Utilizadas
+Integração com outros mensageiros (Telegram, SMS, e-mail etc.).
 
-- 
-- 
-- 
-- 
+📋 Backlog do Produto (Resumo)
+Módulo de Coleta de Dados
 
----
+Automatizar login e extração de dados dos 7 sites usando Selenium.
 
-## 🗓️ Cronograma (Sprint)
+Banco de Dados Local
 
+Criar estrutura SQLite para armazenar dados dos clientes.
 
+Interface com PyQt
 
----
+Exibir, filtrar e editar informações dos clientes.
+
+API WhatsApp
+
+Configurar e enviar mensagens automáticas baseadas em eventos.
+
+Autenticação e Configurações
+
+Leitura e escrita de arquivos JSON com credenciais e preferências.
+
+Testes e Validação
+
+Garantir que os dados estão corretos e as mensagens são enviadas conforme esperado.
+
+⚙️ Tecnologias Utilizadas
+Python – Lógica de aplicação
+
+Selenium + WebDriver – Web scraping nos 7 sites
+
+SQLite3 – Banco de dados local
+
+PyQt – Interface gráfica
+
+JSON – Armazenamento de configurações e dados de login
+
+API WhatsApp (Business) – Comunicação automatizada com os clientes
+
+🗓️ Cronograma (Sprints)
+Sprint	Tarefas Principais	Duração Estimada
+1	Coleta de dados dos sites (1 a 3)	1 semana
+2	Coleta de dados dos sites (4 a 7)	1 semana
+3	Banco de dados SQLite + integração inicial	1 semana
+4	Desenvolvimento da interface com PyQt	2 semanas
+5	Integração com API do WhatsApp	1 semana
+6	Testes, ajustes finais e documentação	1 semana
 
 ## 📢 Divulgação
 
