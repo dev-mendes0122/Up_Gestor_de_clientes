@@ -19,7 +19,6 @@ Este repositório contém a documentação completa do projeto desenvolvido pelo
 | Nome                            | Curso                                 | Disciplina                                   |
 |---------------------------------|---------------------------------------|----------------------------------------------|
 | Pedro Adolfo Custódio Maia      | Análise e Desenvolvimento de Sistemas | Desenvolvimento Rápido de Aplicações em Python      |
-| Thamara Oliveira da Silva       | Análise e Desenvolvimento de Sistemas | Desenvolvimento Rápido de Aplicações em Python |
 | Zahira de Oliveira Silva  | Ciência da Computação            | Desenvolvimento Rápido de Aplicações em Python    |
 | Sabrina Moreno Paes  | Ciência da Computação            | Desenvolvimento Rápido de Aplicações em Python    |
 | Fellipe Galvão de F. Mendes      | Análise e Desenvolvimento de Sistemas | Desenvolvimento Rápido de Aplicações em Python
