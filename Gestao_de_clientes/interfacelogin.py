@@ -23,7 +23,7 @@ class LoginWindow(QWidget):
     def setup_ui(self):
         # Layout principal da janela
         main_layout = QVBoxLayout()
-        main_layout.setContentsMargins(40, 40, 40, 20)
+        main_layout.setContentsMargins(100, 100, 100, 20)
 
         # Título no topo
         titulo_label = QLabel("⬆️ UP Gestores")
@@ -31,10 +31,8 @@ class LoginWindow(QWidget):
         titulo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(titulo_label)
 
-        # Espaço vertical para centralizar o conteúdo
         main_layout.addSpacerItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
 
-        # Centro com o cartão de login
         center_layout = QHBoxLayout()
         center_layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -78,10 +76,8 @@ class LoginWindow(QWidget):
         center_layout.addWidget(login_card)
         main_layout.addLayout(center_layout)
 
-        # Espaço inferior para manter tudo centralizado
         main_layout.addSpacerItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
 
-        # Versão no canto inferior direito
         version_layout = QHBoxLayout()
         version_layout.addSpacerItem(QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum))
         versao_label = QLabel("v1.0")
