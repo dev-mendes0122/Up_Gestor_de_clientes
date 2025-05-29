@@ -19,16 +19,13 @@ Este repositório contém a documentação completa do projeto desenvolvido pelo
 
 | Nome                            | Curso                                 | Disciplina                                   |
 |---------------------------------|---------------------------------------|----------------------------------------------|
-| Gabriel de Moura Botelho Campos | Análise e Desenvolvimento de Sistemas | Programação Orientada a Objetos em Java      |
-| Matheus Oliveira da Silva       | Análise e Desenvolvimento de Sistemas | Programação Orientada a Objetos em Java      |
-| Pedro Adolfo Custódio Maia      | Análise e Desenvolvimento de Sistemas | Programação Orientada a Objetos em Java      |
-| Lucas Rodrigues Bueno           | Análise e Desenvolvimento de Sistemas | Programação Orientada a Objetos em Java      |
+| Pedro Adolfo Custódio Maia      | Análise e Desenvolvimento de Sistemas | Desenvolvimento Rápido de Aplicações em Python      |
 | Thamara Oliveira da Silva       | Análise e Desenvolvimento de Sistemas | Desenvolvimento Rápido de Aplicações em Python |
 | Zahira de Oliveira Silva  | Ciência da Computação            | Desenvolvimento Rápido de Aplicações em Python    |
 | Sabrina Moreno Paes  | Ciência da Computação            | Desenvolvimento Rápido de Aplicações em Python    |
 
 
-**Professor Orientador:** Kesede Rodrigues Julio
+**Professor Orientador:** Mauro
 
 ---
 
