@@ -9,6 +9,9 @@ import threading
 from main_config import ConfigWindow
 from cadastro_widget import CadastroWidget
 from clientes_widget import ClientesWidget
+from abrir_painel_widget import AbrirPainelWidget
+from raspar_dados_widget import RasparDadosWidget
+
 
 
 class MainWindow(QWidget):
@@ -94,23 +97,14 @@ class MainWindow(QWidget):
                 widget.setParent(None)
 
     def abrir_painel(self):
-        comando = (
-            r'"C:\Program Files\Google\Chrome\Application\chrome.exe" '
-            '--remote-debugging-port=9222 '
-            '--user-data-dir="C:\\selenium-profile" '
-            'https://cms.xcsdx.online/'
-        )
-        subprocess.Popen(comando, shell=True)
-        self.label_conteudo.setText("🌐 Painel aberto no Chrome. Faça o login manualmente e clique em Raspar dados.")
-
+        self.limpar_conteudo()
+        self.content_layout.addWidget(AbrirPainelWidget())
 
     def executar_raspar_dados(self):
-        # Executa o script de raspagem e inserção em uma thread separada
-        def tarefa():
-            import scraping_e_insercao  # você pode separar esse script em um arquivo .py
+        self.limpar_conteudo()
+        self.content_layout.addWidget(RasparDadosWidget())
 
-        threading.Thread(target=tarefa).start()
-        self.label_conteudo.setText("📥 Dados raspados e inseridos no banco!")
+
 
 
 
