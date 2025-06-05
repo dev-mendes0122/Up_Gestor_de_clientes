@@ -30,7 +30,7 @@ Este repositório contém a documentação completa do projeto desenvolvido pelo
 🧭 Introdução
 A comunicação rápida e eficiente com os clientes é um dos pilares fundamentais para empresas prestadoras de serviço, como provedores de IPTV. Atualmente, muitos desses negócios dependem de diversas plataformas para gerenciar informações dos clientes, o que torna o atendimento descentralizado, manual e propenso a erros.
 
-Pensando nisso, este projeto propõe o desenvolvimento de um sistema unificado que centraliza os dados de sites utilizados por um cliente em uma única aplicação. Com o uso de tecnologias como Python, SQLite3, Selenium e WebDriver para coleta de dados (web scraping), além de uma interface gráfica em PyQt, será possível automatizar o fluxo de informações.
+Pensando nisso, este projeto propõe o desenvolvimento de um sistema unificado que centraliza os dados de sites utilizados por um cliente em uma única aplicação. Com o uso de tecnologias como Python, SQLite3, Selenium e WebDriver para coleta de dados (web scraping) e envio de mensagens pelo whatsapp, além de uma interface gráfica em PyQt, será possível automatizar o fluxo de informações.
 
 🎯 Objetivo
 Problema
@@ -55,9 +55,11 @@ Interface gráfica (GUI): Gerenciamento das funcionalidades por meio de uma apli
 
 Autenticação via JSON: Controle de acesso ao sistema e dados de configuração armazenados de forma segura.
 
+Comunicação pelo whatsapp dentro do próprio sistema.
+
 Limitações:
 
-Atendimento complexo e técnico continuará sendo realizado manualmente.
+Por enquanto apenas um painel.
 
 A primeira versão não terá foco em grande escalabilidade ou múltiplos usuários simultâneos.
 
