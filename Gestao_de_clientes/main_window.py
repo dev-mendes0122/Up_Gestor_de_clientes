@@ -11,6 +11,9 @@ from cadastro_widget import CadastroWidget
 from clientes_widget import ClientesWidget
 from abrir_painel_widget import AbrirPainelWidget
 from raspar_dados_widget import RasparDadosWidget
+from abrir_whatsapp_widget import AbrirWhatsAppWidget
+
+
 
 
 
@@ -36,15 +39,17 @@ class MainWindow(QWidget):
 
         btn_cadastros = QPushButton("📋 Cadastrar")
         btn_clientes = QPushButton("👥 Clientes")
-        btn_config = QPushButton("⚙️ Configurações")
         btn_abrir_painel = QPushButton("🌐 Abrir Painel")
         btn_raspar_dados = QPushButton("📥 Raspar Dados")
+        btn_abrir_whatsapp = QPushButton("💬 Abrir WhatsApp")
+        btn_config = QPushButton("⚙️ Configurações")
         btn_logout = QPushButton("🚪 Sair")
 
         btn_cadastros.clicked.connect(self.abrir_cadastro)
         btn_clientes.clicked.connect(self.abrir_clientes)
         btn_abrir_painel.clicked.connect(self.abrir_painel)
         btn_raspar_dados.clicked.connect(self.executar_raspar_dados)
+        btn_abrir_whatsapp.clicked.connect(self.abrir_whatsapp)
         btn_logout.clicked.connect(self.sair)
         btn_config.clicked.connect(self.abrir_configuracoes)
 
@@ -52,9 +57,10 @@ class MainWindow(QWidget):
         menu_layout.addWidget(self.label_usuario)
         menu_layout.addWidget(btn_cadastros)
         menu_layout.addWidget(btn_clientes)
-        menu_layout.addWidget(btn_config)
         menu_layout.addWidget(btn_abrir_painel)
         menu_layout.addWidget(btn_raspar_dados)
+        menu_layout.addWidget(btn_abrir_whatsapp)
+        menu_layout.addWidget(btn_config)
         menu_layout.addStretch()
         menu_layout.addWidget(btn_logout)
 
@@ -103,6 +109,11 @@ class MainWindow(QWidget):
     def executar_raspar_dados(self):
         self.limpar_conteudo()
         self.content_layout.addWidget(RasparDadosWidget())
+
+    def abrir_whatsapp(self):
+        self.limpar_conteudo()
+        self.content_layout.addWidget(AbrirWhatsAppWidget())
+
 
 
 
